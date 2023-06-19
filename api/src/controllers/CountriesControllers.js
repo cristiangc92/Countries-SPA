@@ -1,8 +1,5 @@
-// const { Router } = require("express");
 const { Country, Activity } = require("../db");
 const axios = require("axios");
-
-// const router = Router();
 
 const getApiInfo = async () => {
   const apiUrl = await axios.get("https://restcountries.com/v3/all");
@@ -13,8 +10,8 @@ const getApiInfo = async () => {
         name: e.name.common,
         image: e.flags[0],
         continents: e.continents[0],
-        capital: e.capital,
-        subregion: e.subregion,
+        capital: e.capital || ["Capital not found"],
+        subregion: e.subregion || "Subregion not found",
         area: e.area,
         population: e.population,
       },
