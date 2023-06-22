@@ -13,8 +13,16 @@
 .fondoLanding h1 {
   font-size: 4rem;
   font-weight: bold;
-  border-radius: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 425px) {
+  .fondoLanding h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .fondoLanding h1 {
+    font-size: 3rem;
+  }
 }
