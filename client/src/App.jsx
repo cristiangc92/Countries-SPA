@@ -1,13 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from "./components/LandingPage.jsx";
 
 function App() {
   return (
-    <div>
-      <h1>Countries SPA</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<LandingPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
