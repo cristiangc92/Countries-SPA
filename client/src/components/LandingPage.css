@@ -17,6 +17,7 @@
   padding-right: 1rem;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 1rem black;
+  margin-bottom: 1rem;
 }
 
 .fondoLanding button {
@@ -38,6 +39,5 @@
 @media (max-width: 320px) {
   .fondoLanding h1 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
   }
 }
