@@ -47,3 +47,25 @@ export function orderByPopulation(payload) {
     payload,
   };
 }
+
+export function getDetail(id) {
+  return async function (dispatch) {
+    const json = await axios.get("http://localhost:3001/countries/" + id);
+    return dispatch({
+      type: "GET_DETAIL",
+      payload: json.data,
+    });
+  };
+}
+
+export function getNameCountries(name) {
+  return async function (dispatch) {
+    const json = await axios.get(
+      "http://localhost:3001/countries?name=" + name
+    );
+    return dispatch({
+      type: "GET_NAME_COUNTRIES",
+      payload: json.data,
+    });
+  };
+}

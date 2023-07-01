@@ -1,0 +1,103 @@
+.fondoDetail {
+  background-image: url("../assets/fondoLanding.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerDetail {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  height: fit-content;
+  width: 90%;
+  border-radius: 2rem;
+  color: black;
+}
+
+.titulDetail {
+  text-align: center;
+  font-style: italic;
+  padding: 1rem;
+}
+
+.subContainerDetail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttonDetail {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.imgDetail img {
+  height: 20rem;
+  width: auto;
+}
+
+.infoDetail {
+  text-align: start;
+}
+
+.pActivity {
+  text-align: center;
+  font-weight: bold;
+}
+
+.activityDetail {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .imgDetail img {
+    height: 13rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fondoDetail {
+    height: 100%;
+  }
+  .containerDetail {
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .subContainerDetail {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .imgDetail {
+    margin-bottom: 2rem;
+  }
+  .imgDetail img {
+    height: 18rem;
+  }
+  .infoDetail {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .imgDetail img {
+    height: auto;
+    width: 20rem;
+  }
+  .containerDetail {
+    width: 95%;
+  }
+}
+
+@media (max-width: 320px) {
+  .imgDetail img {
+    height: auto;
+    width: 16rem;
+  }
+}

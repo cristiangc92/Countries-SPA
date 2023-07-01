@@ -2,6 +2,7 @@ const initialState = {
   countries: [],
   allCountries: [],
   activities: [],
+  detail: [],
 };
 
 function rootReducer(state = initialState, action) {
@@ -95,6 +96,18 @@ function rootReducer(state = initialState, action) {
       return {
         ...state,
         countries: sortedArrPop,
+      };
+
+    case "GET_DETAIL":
+      return {
+        ...state,
+        detail: action.payload,
+      };
+
+    case "GET_NAME_COUNTRIES":
+      return {
+        ...state,
+        countries: action.payload,
       };
 
     default:

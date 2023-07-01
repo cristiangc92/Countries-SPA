@@ -1,0 +1,23 @@
+.contenedor {
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+
+.contenedorInt {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+}
+
+@media (max-width: 425px) {
+  .contenedorInt {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .contenedorInt {
+    padding: 1rem;
+  }
+}
