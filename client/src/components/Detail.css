@@ -24,6 +24,11 @@
   padding: 1rem;
 }
 
+.strongTitulo {
+  border-radius: 1rem;
+  padding: 0.2rem;
+}
+
 .subContainerDetail {
   display: flex;
   justify-content: space-around;
@@ -43,6 +48,8 @@
 
 .infoDetail {
   text-align: start;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .pActivity {
@@ -52,6 +59,12 @@
 
 .activityDetail {
   text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.box {
+  text-align: start;
 }
 
 @media (max-width: 1024px) {
@@ -99,5 +112,9 @@
   .imgDetail img {
     height: auto;
     width: 16rem;
+  }
+
+  .infoDetail {
+    padding: 0.5rem;
   }
 }

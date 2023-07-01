@@ -12,7 +12,7 @@ export default function Home() {
   const dispatch = useDispatch();
   const allCountries = useSelector((state) => state.countries);
   const [currentPage, setCurrentPage] = useState(1);
-  const [countriesPerPage, setCountriesPerPage] = useState(30);
+  const [countriesPerPage, setCountriesPerPage] = useState(28);
   const indexOfLastCountry = currentPage * countriesPerPage;
   const indexOfFirstCountry = indexOfLastCountry - countriesPerPage;
   const currentCountries = allCountries?.slice(
@@ -54,9 +54,9 @@ export default function Home() {
           );
         })}
       </div>
-      <div>
+      {/* <div className="containerFooter">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -20,14 +20,16 @@ export default function Detail() {
         <div className="containerDetail">
           <div className="titulDetail">
             <h1>
-              <strong>{myCountry.name}</strong>
+              <strong className="strongTitulo bg-success">
+                {myCountry.name}
+              </strong>
             </h1>
           </div>
           <div className="subContainerDetail">
             <div className="imgDetail">
-              <img src={myCountry.image} alt="" />
+              <img className="bg-success p-3" src={myCountry.image} alt="" />
             </div>
-            <div className="infoDetail">
+            <div className="infoDetail bg-success">
               <h3>
                 <strong>Continent:</strong> {myCountry.continents}
               </h3>
@@ -44,19 +46,19 @@ export default function Detail() {
                 <strong>Population:</strong> {myCountry.population}
               </h3>
             </div>
-            <div className="activityDetail">
+            <div className="activityDetail bg-success">
               <h2>
                 <strong>Activities:</strong>
               </h2>
-              {myCountry.activities.length > 0 ? (
+              {myCountry.activities?.length > 0 ? (
                 myCountry.activities.map((a) => (
                   <>
                     <p className="pActivity">{a.id}</p>
                     <ul>
-                      <li>Name: {a.name}.</li>
-                      <li>Diff: {a.difficulty}.</li>
-                      <li>Durat: {a.duration}.</li>
-                      <li>Season: {a.season}.</li>
+                      <li className="box">Name: {a.name}.</li>
+                      <li className="box">Diff: {a.difficulty}.</li>
+                      <li className="box">Durat: {a.duration}.</li>
+                      <li className="box">Season: {a.season}.</li>
                     </ul>
                   </>
                 ))
