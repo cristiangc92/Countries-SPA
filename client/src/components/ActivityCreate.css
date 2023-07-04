@@ -1,0 +1,52 @@
+.fondoCreate {
+  background-image: url("../assets/fondoLanding.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloDetail {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.formCreate {
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: green;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.list-group {
+  text-align: center;
+  list-style: none;
+  width: fit-content;
+  margin-left: 35%;
+  margin-top: 1rem;
+}
+
+.list {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+.btnDetail {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 425px) {
+  .formCreate {
+    width: 95%;
+  }
+}

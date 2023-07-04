@@ -9,6 +9,7 @@ import {
 } from "../actions";
 import "./Navbar.css";
 import SearchBar from "./SearchBar";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const dispatch = useDispatch();
@@ -56,6 +57,13 @@ export default function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link to={"/activity"}>
+                <button className="btn btn-light createActivi" type="submit">
+                  Create Activity
+                </button>
+              </Link>
+            </li>
             <li className="nav-item">
               <select
                 className="form-select"
