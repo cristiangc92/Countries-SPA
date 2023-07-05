@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getCountries } from "../actions";
 import Navbar from "./Navbar";
 import Paginado from "./Paginado";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
 export default function Home() {
