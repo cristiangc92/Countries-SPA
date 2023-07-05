@@ -6,7 +6,13 @@ import "./ActivityCreate.css";
 
 export default function ActivityCreate() {
   const dispatch = useDispatch();
-  const allCountries = useSelector((state) => state.countries);
+  const allCountries = useSelector((state) => state.countries).sort(function (
+    a,
+    b
+  ) {
+    if (a.name < b.name) return -1;
+    else return 1;
+  });
   const [input, setInput] = useState({
     name: "",
     difficulty: "",
@@ -98,7 +104,9 @@ export default function ActivityCreate() {
         <h1 className="tituloDetail bg-success">CREATE ACTIVITY</h1>
         <form id="formulario" onSubmit={(e) => handleSubmit(e)}>
           <div className="mb-3">
-            <label className="form-label">Name: </label>
+            <label className="form-label">
+              <strong>Name:</strong>{" "}
+            </label>
             <input
               className="form-control"
               type="text"
@@ -110,7 +118,9 @@ export default function ActivityCreate() {
             <div className="form-text">Name of the activity.</div>
           </div>
           <div className="mb-3">
-            <label className="form-label">Difficulty: </label>
+            <label className="form-label">
+              <strong>Difficulty:</strong>{" "}
+            </label>
             <select
               className="form-select"
               aria-label="Default select example"
@@ -127,7 +137,9 @@ export default function ActivityCreate() {
             <div className="form-text">Difficulty of the activity.</div>
           </div>
           <div className="mb-3">
-            <label className="form-label">Duration: </label>
+            <label className="form-label">
+              <strong>Duration:</strong>{" "}
+            </label>
             <input
               className="form-control"
               type="number"
@@ -139,7 +151,9 @@ export default function ActivityCreate() {
             <div className="form-text">Duration in days of the activity.</div>
           </div>
           <div className="mb-3">
-            <label className="form-label">Season: </label>
+            <label className="form-label">
+              <strong>Season:</strong>{" "}
+            </label>
             <select
               className="form-select"
               aria-label="Default select example"
@@ -155,7 +169,9 @@ export default function ActivityCreate() {
             <div className="form-text">Difficulty of the activity.</div>
           </div>
           <div className="mb-3">
-            <label className="form-label">Countries: </label>
+            <label className="form-label">
+              <strong>Countries:</strong>{" "}
+            </label>
             <select
               className="form-select"
               aria-label="Default select example"

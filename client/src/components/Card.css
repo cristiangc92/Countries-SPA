@@ -2,12 +2,18 @@
   width: 25rem;
   height: auto;
   margin-bottom: 2rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem;
 }
 
 .card img {
   height: 15rem;
   width: 100%;
   object-fit: cover;
+  border: solid 0.2rem black;
+}
+
+.card-body h5 {
+  font-style: italic;
 }
 
 @media (max-width: 375px) {

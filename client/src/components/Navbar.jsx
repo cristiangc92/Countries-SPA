@@ -41,7 +41,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-success">
       <div className="container-fluid">
-        <a className="navbar-brand text-white" href="#">
+        <a className="navbar-brand text-white" href="/home">
           Countries SPA
         </a>
         <button

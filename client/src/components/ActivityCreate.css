@@ -40,6 +40,10 @@
   border-radius: 0.5rem;
 }
 
+.form-text {
+  font-weight: bold;
+}
+
 .btnDetail {
   display: flex;
   justify-content: space-around;
